@@ -8,7 +8,8 @@ import { fetchData } from 'store/data/actions'
 
 export const Main = () => {
   const dispatch = useDispatch()
-  const data = useSelector(store => store.data)
+  const data = useSelector(store => store.walks)
+  console.log(data)
   useEffect(() => {
     dispatch(fetchData())
   }, [])

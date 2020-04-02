@@ -1,14 +1,14 @@
 import { GET_DATA } from './actionTypes';
 
 const initialState = {
-  data: []
+  walks: []
 };
 
 export default function reduce(state = initialState, action) {
     switch (action.type) {
         case GET_DATA:
             return {
-                data: action.data
+                walks: action.data
             };
         default:
             return state;

@@ -1,8 +1,15 @@
 import React from 'react'
 
-export const TableBlock = data => {
-  console.log(data)
+import { Table } from 'components/Table'
+import { Button } from 'components/Button'
+
+import { TableBlockContainer } from './styles'
+
+export const TableBlock = ({data}) => {
   return (
-    <div>table</div>
+    <TableBlockContainer>
+      <Table data={data} />
+      <Button fullWidth padding="20px">Добавить запись</Button>
+    </TableBlockContainer>
   )
 }
